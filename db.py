@@ -1,10 +1,10 @@
 import os
 import mysql.connector
 
-DB = "bdyp15g5rpr8g0unf1wb"
-HOST = "bdyp15g5rpr8g0unf1wb-mysql.services.clever-cloud.com"
-PASSWORD = "ity9sbnvO6CkGEJYFU5n"
-USER = "ujktbixkwxiso6cl"
+DB = ""
+HOST = ""
+PASSWORD = ""
+USER = ""
 
 cnx = mysql.connector.connect(user=USER, password=PASSWORD, host=HOST, database=DB)
 cursor = cnx.cursor()
