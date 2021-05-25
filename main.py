@@ -39,6 +39,7 @@ async def setup(ctx):
           x = 1
     guild = ctx.guild
     if x == 0:
+      # comment out create_role code - True 5/25/21
       await guild.create_role(name="Beginner")
       await guild.create_role(name="Intermidiate", colour=discord.Colour(0x001BFF))
       await guild.create_role(name="Advanced", colour=discord.Colour(0x00FF1B))
