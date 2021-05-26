@@ -23,7 +23,7 @@ from db import addMember
 from db import removeMember
 from db import printStandings
 
-DISCORD_TOKEN = "ODQ1MzgwNDQ1MzE0NzQ0MzIx.YKgH5A.8RAXY_6d5wYVrTTTHGN1pbca-94"
+DISCORD_TOKEN = ""
 bot = commands.Bot(command_prefix="$")
 
 @bot.event
