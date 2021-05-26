@@ -19,12 +19,14 @@ def create_table(name):
         ");"
     )
     cursor.execute(create)
+    cnx.commit()
 
 def addMember(name, db):
     new_db = db.replace(" ", "_")
     try:
         populate = "INSERT INTO " + new_db + " (_user_, _rank_) VALUES ('" + name + "', 500);"
         cursor.execute(populate)
+        cnx.commit()
         return "You have successfully been registered! Your rank will now be tracked."
     except:
         return "You are already registered!"
@@ -34,6 +36,7 @@ def removeMember(name, db):
     new_db = db.replace(" ", "_")
     delete = "DELETE FROM " + new_db + " WHERE _user_ = '" + name + "';"
     outcome = cursor.execute(delete)
+    cnx.commit()
     if outcome == None:
         return "You have successfully resigned!"
 

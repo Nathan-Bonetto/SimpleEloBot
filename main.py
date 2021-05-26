@@ -23,7 +23,7 @@ from db import addMember
 from db import removeMember
 from db import printStandings
 
-DISCORD_TOKEN = "ODQ1MzgwNDQ1MzE0NzQ0MzIx.YKgH5A.SIo1HTQL0Llkjqmxlru8908jZnM"
+DISCORD_TOKEN = "ODQ1MzgwNDQ1MzE0NzQ0MzIx.YKgH5A.8RAXY_6d5wYVrTTTHGN1pbca-94"
 bot = commands.Bot(command_prefix="$")
 
 @bot.event
@@ -39,6 +39,7 @@ async def setup(ctx):
           x = 1
     guild = ctx.guild
     if x == 0:
+      # comment out create_role code - True 5/25/21
       await guild.create_role(name="Beginner")
       await guild.create_role(name="Intermidiate", colour=discord.Colour(0x001BFF))
       await guild.create_role(name="Advanced", colour=discord.Colour(0x00FF1B))
