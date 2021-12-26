@@ -1,16 +1,5 @@
 # Creators: Nathan Bonetto and True Sarmiento
 # Date last edited: 12/25/21
-# This is a discord bot that manages a server's elo system
-# Functions:
-# - Have an admin register people in the bot
-# - Have it know Person A vs Person B is fighting
-# - Have a moderator role declare a winner
-# - Give/take elo relative to the elo difference between the two players
-# - Store the players elo
-# - Create a channel displaying player's elo in descending order
-# - Update said channel everytime a player's elo is updated
-# - Every two weeks take away X amount of elo if someone's name has not been used within the bot
-# - Allow moderators to unregister people from the bot
 
 import discord
 import threading
@@ -25,7 +14,7 @@ from db import updateRank
 from db import decay
 from db import delete_table
 
-DISCORD_TOKEN = "ODQ1MzgwNDQ1MzE0NzQ0MzIx.YKgH5A.gSLy52Qyo_aZRNs2_5wsPm1qL8k"
+DISCORD_TOKEN = ""
 bot = commands.Bot(command_prefix="$", help_command=None)
 
 def decayTimer():
